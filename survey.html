@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for helping us finding out which cat is the best cat!</p>
+  
+    <form id="survey-form">
+       <fieldset>
+      <label for="name" id="name-label">
+        Input your name:
+        <input id="name" type="text" placeholder="Name" required>
+      
+      </label>
+      <label for="email" id="email-label">
+        Input your email:
+        <input id="email" type="email" placeholder="Email address" required>
+      </label>
+        <label for="number" id="number-label">
+          How many cats do you have?
+          <input id="number" type="number" min="0" max="20"placeholder="Number of cats"></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">The best cats are...?
+            <select id="dropdown" name="dropdown">
+              <option value "">Black cats</option>
+              <option value "1">White cats</option>
+              <option value "2">Orange cats</option>
+              <option value "3">Mixed cats</option>
+            </select>
+            </label>
+      </fieldset>
+      <fieldset>
+        
+        <label>Are you also a dog-person?
+          <input id="yes" name="dog" type="radio" checked value="yes">
+          Yes
+          <input id="no" name="dog" type="radio" class="inline" value="no">
+        No
+        </label>
+        
+      </fieldset>
+      
+      <fieldset>
+        Do you think cats are the best animals ever?<label for="yes"><input type="checkbox" id="yes" name="yes" value="yes"> Yes!</input></label>
+        <label for="definitely"><input type="checkbox" id="definitely" name="definitely" value="def"> Definitely!</input></label>
+        <label for="maybe"><input type="checkbox" id="maybe" name="maybe" value="maybe"> Maybe?</input></label>
+      </fieldset>
+      <fieldset>
+        Write your best experience you had with a cat!
+         <label for="exp"><textarea id="exp" name="exp" rows="3" cols="30" placeholder="This one time I was petting a cat and..."></textarea>
+          </label>
+          </fieldset>
+          <input id="submit" name="submit" type="submit" />
+  </form>
+</body>
+</hmtl>
